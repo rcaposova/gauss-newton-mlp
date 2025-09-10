@@ -68,6 +68,15 @@ where:
 
 ---
 
+## Hand Calculations for the Prototype
+
+To complement the MATLAB implementation, this repository also includes a PDF with **manual derivations** of the prototype MLP update equations.   
+
+The goal is to provide **transparent, paper-and-pencil verification** of the algorithm before coding, making it easier to follow the math behind the updates.  
+See [Derivations (PDF)](derivations.pdf) for the full walkthrough.
+
+---
+
 ---
 
 ## Sunspot Series Prediction: Newton's Algorithm vs. Backpropagation
