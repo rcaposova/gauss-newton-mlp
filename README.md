@@ -25,31 +25,31 @@ The goal is **educational**: to show how second-order optimization can be applie
 
 Cost function:
 
-\[
+$$
 E = \tfrac{1}{2} (t - y)^2
-\]
+$$
 
 Gradient:
 
-\[
+$$
 \nabla E = -J^\top (t - y)
-\]
+$$
 
 Gauss–Newton Hessian approximation:
 
-\[
+$$
 H \approx J^\top J
-\]
+$$
 
 Damped Newton update:
 
-\[
+$$
 \Delta w = - (H + \lambda I)^{-1} \nabla E
-\]
+$$
 
 where:
 - \( J \) = Jacobian of network output wrt weights  
-- \( \lambda \) = damping factor for stability  
+- \( \lambda \) = damping factor for stability
 
 ---
 
