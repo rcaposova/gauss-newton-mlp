@@ -115,7 +115,7 @@ From MATLAB:
 
 ```matlab
 SunspotAlgorithm
-
+```
 
 ## Licence
 
