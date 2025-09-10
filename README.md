@@ -68,6 +68,55 @@ where:
 
 ---
 
+---
+
+## Sunspot Series Prediction: Newton's Algorithm vs. Backpropagation
+
+The script `SunspotAlgorithm.m` demonstrates a practical application of Newton's method versus classical backpropagation on the well-known **sunspot time series**. It trains a small feedforward neural network with:
+
+- **10 input nodes (window size = 10)**
+- **5 hidden sigmoid units**
+- **1 linear output**
+
+### Workflow
+- Loads and normalizes `sunspot.dat` (zero mean, unit variance)  
+- Builds input–target pairs with sliding windows  
+- Splits data into **70% training / 30% testing**  
+- Trains the network with:
+  - **Gauss–Newton (adaptive Levenberg–Marquardt damping)**
+  - **Classical backpropagation (gradient descent)**
+- Evaluates **NMSE (Normalized Mean Squared Error)** on the test set  
+- Plots:
+  - Actual vs. predicted sunspot numbers (Newton vs. Backprop)  
+  - Convergence curves (average cost per epoch)  
+  - Training-set fits
+
+### Key Equations
+Gauss–Newton step:
+
+$$
+(J^\top J + \lambda I)\,\Delta = J^\top e
+$$
+
+Update rule:
+
+$$
+w \leftarrow w + \alpha \Delta
+$$
+
+where:  
+- \( J \) = Jacobian of the network output w.r.t. parameters  
+- \( e \) = error vector  
+- \( \lambda \) = damping parameter  
+- \( \alpha \) = step size factor  
+
+### Usage
+From MATLAB:
+
+```matlab
+SunspotAlgorithm
+
+
 ## Licence
 
 This project is released under the MIT License
