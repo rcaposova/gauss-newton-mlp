@@ -68,23 +68,6 @@ where:
 
 ---
 
-## Example Output
-
-Newton Update
-    0.1532
-   -0.0571
-    0.0948
-   -0.1822
-    0.1451
-    0.1657
-    0.4286
-    0.2163
-   -0.2461
-    0.3321
-    0.0008
-
----
-
 ## Licence
 
 This project is released under the MIT License
